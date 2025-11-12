@@ -1,0 +1,729 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+button{
+     cursor: pointer;
+     font-family: 'Vazir';
+}
+body{
+     background:linear-gradient(to right , white ,rgb(205, 216, 255) 100%);
+}
+a{
+     text-decoration: none;
+     color: black;
+     transition: all 0.4s ease-out 0s;
+}
+a:hover{
+     color: red;
+}
+@font-face {
+     font-family: 'Roboto';
+     src: url(../Fonts/Roboto/Roboto-MediumItalic.ttf);
+
+     font-family: 'Vazir';
+     src: url(../Fonts/vazir-font-v16.1.0/Vazir-Bold.ttf);
+}
+#primaryNav{
+     background:linear-gradient(to right , white ,rgb(205, 216, 255) 100%) transparent ;
+     position: sticky;
+     top: 0;
+     height: 5rem;
+     width: 100vw;
+     box-shadow: 0 -12px 10px 0 rgba(211, 211, 211, .15);
+     display: flex;
+     flex-direction: row-reverse;
+
+}
+.logo{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+font-family: 'Roboto';
+font-size: 1.3rem;
+font-weight: 30;
+background-color: none;
+height: 100%;
+width: 15%;
+}
+.logo h1::first-letter{
+     color: rgb(255, 187, 0);
+}
+.logo caption{
+     color: rgb(35, 35, 39);
+     font-size: 2px;
+}
+#primaryNav nav{
+     font-family: 'Vazir';
+     direction: rtl;
+     display: flex;
+     flex-direction: row;
+     justify-content: start;
+     align-items: center;
+     gap: 2rem;
+     background: none;
+     height: 100%;
+     width: 55%;
+}
+.signUpAndSearch{
+background: none;
+height: 100%;
+width: 30%;
+display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: .5rem;
+}
+#SignUp_In{
+     width: fit-content;
+     font-family: 'Vazir';
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+     background: rgb(255, 196, 0);
+     border: solid 0.4px rgb(255, 196, 0);
+     border-radius: 10rem;
+     padding: .5rem 1rem .5rem 1rem;
+}
+#SignUp_In svg{
+     width: 1rem;
+     height: 50%;
+}
+#demoShow{
+     width: fit-content;
+     font-family: 'Vazir';
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+     background:none;
+     border: solid 0.4px rgb(255, 196, 0);
+     border-radius: 10rem;
+     padding: .5rem 1rem .5rem 1rem;
+}
+#demoShow svg{
+     width: 1rem;
+     height: 50%;
+     color: rgb(255, 196, 0);
+}
+.ightModContainer{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+.lightMod{
+     width: 1.2rem;
+     height: 1.2rem;
+}
+#blackNav{
+     height: 3.5rem;
+     width: 100vw;
+     background: #252525;
+     color: #fff;
+     font-family: 'Vazir';
+     display: flex;
+     flex: 1;
+     align-items: center;
+     flex-direction: row-reverse;
+}
+#TwiceNav{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row-reverse;
+     gap: 2rem;
+     width: 75%;
+     height: 100%;
+}
+#TwiceNav a{
+     color: white;
+     transition: all 0.4s ease-out 0s;
+}
+#TwiceNav a:hover{
+     color: red;
+}
+.phoneNumber{
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     width: 25%;
+     height: 100%;
+     padding-left: 2rem;
+}
+.phoneNumber svg{
+     width: 2rem;
+     height: 30%;
+}
+#firstSec{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row-reverse;
+     flex: 1;
+}
+.texts{
+     font-family: 'Vazir';
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     width: 50%;
+     height: 100%;
+}
+.texts h1{
+     padding: 0.7rem 0 0 0;
+}
+.texts p{
+     direction: rtl;
+     padding: 2rem 7.2rem;
+}
+.pcSvg{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+     height: 100%;
+}
+#letsSignUp{
+     margin-top: 2rem;
+direction: rtl;
+background: rgb(255, 174, 0);
+font-family: 'Vazir';
+width: fit-content;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+border-radius: 20rem;
+border: none;
+padding: 0.3rem;
+}
+#letsSignUp svg{
+     margin-right: 1rem;
+     width: 2rem;
+     height: 30%;
+}
+#firstPanel{
+margin-top: 4rem;
+font-family: 'Vazir';
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.btns{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-direction: row-reverse;
+width: max-content;
+height: max-content;
+background: #fff;
+gap: 1rem;
+border-radius: 50rem;
+margin-top: 1rem;
+padding: 0.7rem;
+}
+.newBtnsStyle{
+     font-family: 'Vazir';
+background: #EEE;
+border-radius: 50rem;
+padding: .6rem;
+border: none;
+}
+#firstbtnOfNewBtns{
+     background: rgb(255, 174, 0);
+
+}
+#lamasab{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+}
+.Conta_infoSect{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
+.infoSecOne {
+     padding: 1.3rem 3rem;
+     font-family: 'Vazir';
+     background: #fff;
+     border:solid 0.6px black;
+     margin: 2rem 2rem;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 20%;
+     border-radius: 1rem;
+}
+.infoSecOne svg{
+     height: 1.5rem;
+     width: 1.5rem;
+}
+.infoSecTwo {
+     padding: 1.3rem 3rem;
+     font-family: 'Vazir';
+     background: #fff;
+     border:solid 0.6px black;
+     margin: 2rem 2rem;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 20%;
+     border-radius: 1rem;
+}
+.infoSecTwo svg{
+     height: 1.5rem;
+     width: 1.5rem;
+}
+.infoSecThree {
+     padding: 1.3rem 3rem;
+     font-family: 'Vazir';
+     background: #fff;
+     border:solid 0.6px black;
+     margin: 2rem 2rem;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 20%;
+     border-radius: 1rem;
+}
+.infoSecThree svg{
+     height: 1.5rem;
+     width: 1.5rem;
+}
+.infoSecFour {
+     padding: 1.3rem 3rem;
+     font-family: 'Vazir';
+     background: #fff;
+     border:solid 0.6px black;
+     margin: 2rem 2rem;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 20%;
+     border-radius: 1rem;
+}
+.infoSecFour svg{
+     height: 1.5rem;
+     width: 1.5rem;
+}
+.setFlexBeforStart{
+     margin-top: 4rem;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     font-family: 'Vazir';
+}
+.setFlexBeforStart p{
+     padding-top: 1rem;
+     font-size: 0.9rem;
+}
+#letsVsPanels{
+     margin-top: 1rem;
+     direction: rtl;
+     background: rgb(255, 174, 0);
+     font-family: 'Vazir';
+     width: fit-content;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20rem;
+     border: none;
+     padding: 0.3rem;
+}
+#letsVsPanels svg{
+     margin-right: 1rem;
+     width: 2rem;
+     height: 30%;
+}
+.contPan{
+     display: flex;
+     flex-direction: row;
+}
+.firstOneXd {
+     padding: 1.3rem 3rem;
+     font-family: 'Vazir';
+     background: rgb(194, 192, 192);
+     border:solid 0.6px rgb(194, 192, 192);
+     margin: 2rem 2rem;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 20%;
+     border-radius: 1rem;
+}
+.firstOneXd svg{
+     height: 2.5rem;
+     width: 2.5rem;
+}
+.SecondOneXd {
+     padding: 1.3rem 3rem;
+     font-family: 'Vazir';
+     background: rgb(194, 192, 192);
+     border:solid 0.6px rgb(194, 192, 192);
+     margin: 2rem 2rem;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 20%;
+     border-radius: 1rem;
+}
+.SecondOneXd svg{
+     height: 2.5rem;
+     width: 2.5rem;
+}
+.ThirdOneXd{
+     padding: 1.3rem 3rem;
+     font-family: 'Vazir';
+     background: rgb(194, 192, 192);
+     border:solid 0.6px rgb(194, 192, 192);
+     margin: 2rem 2rem;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 20%;
+     border-radius: 1rem;
+}
+.ThirdOneXd svg{
+     height: 2.5rem;
+     width: 2.5rem;
+}
+.fourOneXd{
+     padding: 1.3rem 3rem;
+     font-family: 'Vazir';
+     background: rgb(194, 192, 192);
+     border:solid 0.6px rgb(194, 192, 192);
+     margin: 2rem 2rem;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 20%;
+     border-radius: 1rem;
+}
+.fourOneXd svg{
+     height: 2.5rem;
+     width: 2.5rem;
+}
+.smsMarketing{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+.getCont{
+     background:linear-gradient(to left , white ,rgb(205, 216, 255) 100%);
+     min-height: 10rem;
+     width: 70%;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 25px;
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: center;
+     align-items: center;
+     border: 0.3px rgb(201, 200, 200) solid;
+}
+.imageii{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+width: 30%;
+height: 100%;}
+.Textii{
+     font-family: 'Vazir';
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     direction: rtl;
+ width: 40%;
+height: 100%;
+margin-top: 2rem;
+padding-left: 4rem;
+}
+.signUpii{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     width: 30%;
+     height: 100%;
+}
+#btnii{
+     direction: rtl;
+     background: rgb(255, 174, 0);
+     font-family: 'Vazir';
+     width: fit-content;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20rem;
+     border: none;
+     height: 2.5rem;
+     width: 9rem;
+     padding: 0.3rem;
+     position: relative;
+     top: 3rem;
+     left: 2rem;
+}
+.signUpii input{
+     background-color: #EEE;
+     border: none;
+     border-radius: 24px;
+     height: 2.5rem;
+     width: 9rem;
+     position: relative;
+     top: 3rem;
+     left: 2rem;
+}
+#messageWebSevice{
+     font-family: 'Vazir';
+     margin-top: 4rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     min-height: 10rem;
+     width: 100%;
+     background: #252525;
+     color: #fff;
+}
+
+#messageWebSevice h1{
+     padding: 2rem 0 0 0;
+}
+
+#messageWebSevice p{
+     font-size: small;
+     padding: 1rem 2rem 2rem 2rem;
+}
+.CurseIcons{
+     margin-top: 1rem;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 5rem;
+}
+.CurseIcons button{
+    height: 5rem;
+    width: 10rem; 
+    border-radius: 1rem;
+    border: none;
+}
+.newbtns{
+     margin-top: 1rem;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 2rem;
+     margin-bottom: 2rem;
+}
+#gilasbtn{
+     margin-top: 2rem;
+     direction: rtl;
+     background: rgb(255, 174, 0);
+     font-family: 'Vazir';
+     width: fit-content;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20rem;
+     border: none;
+     padding: 0.7rem;
+}
+#gilasBtnTwo{
+     margin-top: 2rem;
+     direction: rtl;
+     background: rgb(138, 114, 114);
+     font-family: 'Vazir';
+     width: fit-content;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20rem;
+     border: none;
+     padding: 0.7rem;
+     color: aqua;
+}
+#aboutUs{
+     width: 100%;
+     display: flex;
+     flex-direction: row-reverse;
+     font-family: 'Vazir';
+}
+.aboutUsText{
+     display: flex;
+     flex-direction: column;
+     justify-content: right;
+     /* align-items: center; */
+     margin-right: 5rem;
+     width: 50%;
+     text-align: right;
+  margin-top: 5rem;
+}
+.aboutUsText h3{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.aboutUsText p{
+     direction: rtl;
+     padding-left:7rem ;
+}
+.aboutUsPic{
+     width: 50%;
+}
+#thirdChBtn{
+     margin-top: 2rem;
+     direction: rtl;
+     background: rgb(255, 174, 0);
+     font-family: 'Vazir';
+     width: fit-content;
+     border-radius: 20rem;
+     border: none;
+     padding: 0.7rem;
+     width: 7rem;  
+     position: relative;
+     left: 33rem;
+}
+#newCurses{
+     width: 100%;
+     margin-top: 2rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     /* gap: 5rem */
+}
+#newCurses button{
+     background: rgb(206, 200, 200);
+     height: 5rem;
+    width: 12rem; 
+    border-radius: 1rem;
+    border: none;
+}
+#lastSectionTYGod{
+     border-radius: 1.2rem;
+     margin-right: auto;
+     margin-left: auto;
+     width: 70%;
+     min-height: 10rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 4rem;
+     background: #101116;
+}
+#lastSectionTYGod p{
+     font-family: 'Vazir';
+     font-size: 15px;
+     color: white;
+     direction: rtl;
+     text-align: center;
+     padding: 1rem 2rem 1rem 2rem;
+}
+#takeFooterBro{
+     font-family: 'Vazir';
+     background: #000000;
+     width: 100%;
+     min-height: 69%;
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: space-between;
+     justify-items: center;
+}
+.waysToConnection{
+     display: flex;
+     flex-direction: column;
+     justify-content: right;
+     align-items: center;
+     margin-top: 6.7rem;
+     width: 20%;
+     font-size: 9px;
+}
+.idehpardazan{
+     width: 20%;
+     display: flex;
+     flex-direction: column;
+     justify-content: right;
+     align-items: center;
+     margin-top: 6.7rem;
+     font-size: 9px;
+}
+.idehpardazan a{
+     color: white;
+     margin-top: 1rem;
+     font-size: 12px;
+}
+.Developers{
+     width: 20%;
+     display: flex;
+     flex-direction: column;
+     justify-content: right;
+     align-items: center;
+     margin-top: 6.7rem;
+     font-size: 9px;
+
+}
+.Developers a{
+     color: white;
+     margin-top: 1rem;
+     font-size: 12px;
+}
+.Khadamat{
+     width: 20%;
+     display: flex;
+     flex-direction: column;
+     justify-content: right;
+     align-items: center;
+     margin-top: 6.7rem;
+     font-size: 9px;
+
+}
+.Khadamat a{
+     color: white;
+     margin-top: 1rem;
+     font-size: 12px;
+}
+.fasterfind{
+     width: 20%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: right;
+     margin-top: 6.7rem;
+     font-size: 9px;
+}
+.fasterfind a{
+     color: white;
+     margin-top: 1rem;
+     font-size: 12px;
+}
